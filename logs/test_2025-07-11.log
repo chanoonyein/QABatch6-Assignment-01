@@ -1,0 +1,77 @@
+2025-07-11 22:25:01,532 - INFO - Loading login page
+2025-07-11 22:25:05,866 - INFO - Logged in as Admin
+2025-07-11 22:25:08,075 - INFO - Navigated to Buzz module
+2025-07-11 22:26:27,367 - INFO - Loading login page
+2025-07-11 22:26:31,777 - INFO - Logged in as Admin
+2025-07-11 22:26:34,085 - INFO - Navigated to Buzz module
+2025-07-11 22:26:34,542 - INFO - Post created
+2025-07-11 22:26:34,976 - INFO - Allure + Headless test post
+2025-07-11 22:26:34,985 - INFO - Verified posted content
+2025-07-11 22:37:52,303 - INFO - Loading login page
+2025-07-11 22:37:56,397 - INFO - Logged in as Admin
+2025-07-11 22:37:58,696 - INFO - Navigated to Buzz module
+2025-07-11 22:37:59,172 - INFO - Post created
+2025-07-11 22:38:00,105 - INFO - Allure + Headless test post
+2025-07-11 22:38:00,111 - INFO - Verified posted content
+2025-07-11 22:40:53,992 - INFO - Loading login page
+2025-07-11 22:40:57,962 - INFO - Logged in as Admin
+2025-07-11 22:41:00,272 - INFO - Navigated to Buzz module
+2025-07-11 22:41:01,231 - INFO - Post created
+2025-07-11 22:41:02,141 - INFO - Allure + Headless test post
+2025-07-11 22:41:02,149 - INFO - Verified posted content
+2025-07-11 22:41:02,201 - INFO - Comment added
+2025-07-11 22:46:12,493 - INFO - Loading login page
+2025-07-11 22:46:16,330 - INFO - Logged in as Admin
+2025-07-11 22:46:18,708 - INFO - Navigated to Buzz module
+2025-07-11 22:46:19,231 - INFO - Post created
+2025-07-11 22:46:19,890 - INFO - Allure + Headless test post
+2025-07-11 22:46:19,908 - INFO - Verified posted content
+2025-07-11 22:46:20,042 - INFO - Comment added
+2025-07-11 22:47:06,166 - INFO - Loading login page
+2025-07-11 22:47:10,478 - INFO - Logged in as Admin
+2025-07-11 22:47:12,655 - INFO - Navigated to Buzz module
+2025-07-11 22:47:13,127 - INFO - Post created
+2025-07-11 22:47:13,805 - INFO - Allure + Headless test post
+2025-07-11 22:47:13,814 - INFO - Verified posted content
+2025-07-11 22:47:13,953 - INFO - Comment added
+2025-07-11 22:47:13,983 - INFO - Post liked
+2025-07-11 22:49:53,227 - INFO - Loading login page
+2025-07-11 22:49:57,112 - INFO - Logged in as Admin
+2025-07-11 22:50:53,393 - INFO - Loading login page
+2025-07-11 22:50:57,324 - INFO - Logged in as Admin
+2025-07-11 22:52:47,016 - INFO - Loading login page
+2025-07-11 22:52:51,527 - INFO - Logged in as Admin
+2025-07-11 22:52:53,980 - INFO - Navigated to Buzz module
+2025-07-11 22:52:54,512 - INFO - Post created
+2025-07-11 22:52:55,153 - INFO - Allure + Headless test post
+2025-07-11 22:52:55,162 - INFO - Verified posted content
+2025-07-11 22:52:55,234 - INFO - Comment added
+2025-07-11 22:52:55,260 - INFO - Post liked
+2025-07-11 22:57:41,443 - INFO - Loading login page
+2025-07-11 22:57:45,749 - INFO - Logged in as Admin
+2025-07-11 22:57:48,066 - INFO - Navigated to Buzz module
+2025-07-11 22:57:48,549 - INFO - Post created
+2025-07-11 22:57:48,869 - INFO - Hello World
+2025-07-11 23:13:39,185 - INFO - Loading login page
+2025-07-11 23:13:43,039 - INFO - Logged in as Admin
+2025-07-11 23:13:45,455 - INFO - Navigated to Buzz module
+2025-07-11 23:13:45,974 - INFO - Post created
+2025-07-11 23:13:46,304 - INFO - Hello World
+2025-07-11 23:14:34,942 - INFO - Loading login page
+2025-07-11 23:14:39,146 - INFO - Logged in as Admin
+2025-07-11 23:14:41,405 - INFO - Navigated to Buzz module
+2025-07-11 23:14:41,936 - INFO - Post created
+2025-07-11 23:14:42,373 - INFO - Allure + Headless test post
+2025-07-11 23:14:42,384 - INFO - Verified posted content
+2025-07-11 23:14:42,560 - INFO - Comment added
+2025-07-11 23:14:42,593 - INFO - Post liked
+2025-07-11 23:14:43,863 - INFO - Post deleted
+2025-07-11 23:15:26,302 - INFO - Loading login page
+2025-07-11 23:15:30,487 - INFO - Logged in as Admin
+2025-07-11 23:15:32,764 - INFO - Navigated to Buzz module
+2025-07-11 23:15:33,257 - INFO - Post created
+2025-07-11 23:15:34,147 - INFO - Allure + Headless test post
+2025-07-11 23:15:34,162 - INFO - Verified posted content
+2025-07-11 23:15:34,272 - INFO - Comment added
+2025-07-11 23:15:34,296 - INFO - Post liked
+2025-07-11 23:15:45,577 - INFO - Post deleted
