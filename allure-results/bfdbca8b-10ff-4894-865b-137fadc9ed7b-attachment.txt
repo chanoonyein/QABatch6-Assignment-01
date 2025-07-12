@@ -1,9 +1,0 @@
-[32mINFO    [0m test_logger:test_buzz_actions.py:17 Loading login page
-[32mINFO    [0m test_logger:test_buzz_actions.py:20 Logged in as Admin
-[32mINFO    [0m test_logger:test_buzz_actions.py:23 Navigated to Buzz module
-[32mINFO    [0m test_logger:test_buzz_actions.py:28 Post created
-[32mINFO    [0m test_logger:test_buzz_actions.py:29 Hello QABatch6 from Chan Oo
-[32mINFO    [0m test_logger:test_buzz_actions.py:33 Verified posted content
-[32mINFO    [0m test_logger:test_buzz_actions.py:39 Comment added
-[32mINFO    [0m test_logger:test_buzz_actions.py:44 Post liked
-[32mINFO    [0m test_logger:test_buzz_actions.py:48 Post deleted

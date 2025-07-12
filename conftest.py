@@ -8,15 +8,18 @@ from webdriver_manager.chrome import ChromeDriverManager
 
 @pytest.fixture(scope="function")
 def browser():
-    options = Options()
-    options.add_argument("--headless=new")
-    options.add_argument("--window-size=1920,1080")
-    options.add_argument("--disable-gpu")
-    options.add_argument("--no-sandbox")
-    options.add_argument("--disable-dev-shm-usage")
-    driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
+    # remove comments from below code to run on jenken
+    # options = Options()
+    # options.add_argument("--headless=new")
+    # options.add_argument("--window-size=1920,1080")
+    # options.add_argument("--disable-gpu")
+    # options.add_argument("--no-sandbox")
+    # options.add_argument("--disable-dev-shm-usage")
+    # driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()),options=options)
+
+    driver = webdriver.Chrome(service=Service(ChromeDriverManager().install())) # comment for jenkin
+    driver.maximize_window() # comment for jenkin
     driver.implicitly_wait(10)
-    driver.maximize_window()
     yield driver
     driver.quit()
 

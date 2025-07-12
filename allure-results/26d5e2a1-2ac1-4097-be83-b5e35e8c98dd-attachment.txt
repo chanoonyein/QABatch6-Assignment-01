@@ -1,5 +1,0 @@
-[32mINFO    [0m test_logger:test_buzz_actions.py:17 Loading login page
-[32mINFO    [0m test_logger:test_buzz_actions.py:20 Logged in as Admin
-[32mINFO    [0m test_logger:test_buzz_actions.py:23 Navigated to Buzz module
-[32mINFO    [0m test_logger:test_buzz_actions.py:28 Post created
-[32mINFO    [0m test_logger:test_buzz_actions.py:29 test

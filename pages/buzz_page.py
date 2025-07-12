@@ -1,3 +1,4 @@
+from selenium.common import TimeoutException
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import WebDriverWait
@@ -14,11 +15,12 @@ class BuzzPage:
         self.BUZZ_TAB = (By.XPATH, "//span[text()='Buzz']")
         self.POST_INPUT = (By.XPATH, '//textarea[@placeholder="What\'s on your mind?"]')
         self.POST_BUTTON = (By.XPATH, "//button[@type='submit']")
-        self.FIRST_POST_TEXT = (By.CSS_SELECTOR, ".orangehrm-buzz-post-body p")
-        self.COMMENT_LINK = (By.CSS_SELECTOR, ".bi-chat-text-fill")
-        self.COMMENT_INPUT = (By.XPATH, "//input[@placeholder='Write your comment...']")
-        self.LIKE_BUTTON = (By.CSS_SELECTOR, ".orangehrm-heart-icon")
-        self.POST_MENU_TRIGGER = (By.XPATH, "//div[contains(@class, 'orangehrm-buzz-post')][1]//i[contains(@class, 'bi-three-dots')]")
+        # self.FIRST_POST_TEXT = (By.CSS_SELECTOR, ".orangehrm-buzz-post-body p")
+        self.COMMENT_LINK = (By.XPATH, self.BASE_LOCATION+"//i[contains(@class,'bi-chat-text-fill')]")
+        self.COMMENT_INPUT = (By.XPATH, self.BASE_LOCATION+"//input[@placeholder='Write your comment...']")
+        self.LIKE_BUTTON = (By.XPATH, self.BASE_LOCATION+ "//*[local-name()='svg']")
+        self.LIKED_STATE=(By.XPATH, self.BASE_LOCATION+ "//div[contains(@class,'orangehrm-like-animation')]")
+        self.POST_MENU_TRIGGER = (By.XPATH,self.BASE_LOCATION+"//i[contains(@class, 'bi-three-dots')]")
         self.DELETE_OPTION = (By.XPATH, "//p[text()='Delete Post']")
         self.CONFIRM_DELETE_BUTTON = (By.XPATH, "//button[text()=' Yes, Delete ']")
         self.SUCCESS_ALERT = (By.CSS_SELECTOR, ".oxd-toast")
@@ -37,7 +39,11 @@ class BuzzPage:
 
     def get_base_location(self,content):
         self.BASE_LOCATION= f"//p[contains(.,'{content}')]/ancestor::div[contains(@class, 'oxd-grid-item--gutters')][1]"
-
+        self.COMMENT_LINK = (By.XPATH, self.BASE_LOCATION + "//i[contains(@class,'bi-chat-text-fill')]")
+        self.COMMENT_INPUT = (By.XPATH, self.BASE_LOCATION + "//input[@placeholder='Write your comment...']")
+        self.LIKE_BUTTON = (By.XPATH, self.BASE_LOCATION + "//*[local-name()='svg']")
+        self.POST_MENU_TRIGGER = (By.XPATH, self.BASE_LOCATION + "//i[contains(@class, 'bi-three-dots')]")
+        self.LIKED_STATE = (By.XPATH, self.BASE_LOCATION + "//div[contains(@class,'orangehrm-like-animation')]")
 
     def comment_on_post(self, comment_text):
         self.wait.until(EC.element_to_be_clickable(self.COMMENT_LINK)).click()
@@ -45,7 +51,12 @@ class BuzzPage:
         comment_input.send_keys(comment_text + Keys.RETURN)
 
     def like_post(self):
-        self.wait.until(EC.element_to_be_clickable(self.LIKE_BUTTON)).click()
+        #self.wait.until(EC.element_to_be_clickable(self.LIKE_BUTTON)).click()
+        # Assert the post is liked (e.g., by checking class or icon change)
+        try:
+            self.wait.until(EC.presence_of_element_located(self.LIKED_STATE))
+        except TimeoutException:
+            assert False, "Post was not deleted successfully"
 
     def delete_post(self):
         self.wait.until(EC.element_to_be_clickable(self.POST_MENU_TRIGGER)).click()
